@@ -8,7 +8,6 @@ import { TbMenu } from "react-icons/tb";
 import { useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
-import Aos from "aos";
 
 
 import Logins from './img/Instagram_icon.png.webp'
@@ -17,7 +16,6 @@ import Logtel from './img/tel.png'
 import LogWhats from './img/wtsap.png'
 
 
-Aos.init()
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -73,28 +71,8 @@ function Header_site() {
             <span>
               PIDE PRESUPUESTO SIN COMPROMISO</span>
             <div className=" flex  items-center ">
-              <FaArrowRight
-
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"
-
-                className=" text-2xl"></FaArrowRight>
-              <Link href={'tel:+34615951025'}
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"
-                className=" ps-3 font-bold">Telf:+34 615951025</Link>
+              <FaArrowRight className=" text-2xl"></FaArrowRight>
+              <Link href={'tel:+34615951025'}>Telf:+34 615951025</Link>
             </div>
 
           </span>
