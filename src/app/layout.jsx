@@ -8,8 +8,9 @@ import { TbMenu } from "react-icons/tb";
 import { useRef, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
-
-
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css'
+import { useEffect } from "react";
 import Logins from './img/Instagram_icon.png.webp'
 import Logemail from './img/Gmail_icon_(2020).svg.png'
 import Logtel from './img/tel.png'
@@ -17,6 +18,7 @@ import LogWhats from './img/wtsap.png'
 
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 
 
@@ -50,6 +52,13 @@ function Header_site() {
     setIsMenuopen(false)
   }
 
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
+
   return (
     <header className=" w-full flex justify-center items-center">
       <section className=" w-full flex items-center justify-between 2xl:container  px-4 py-2 relative ">
@@ -67,15 +76,15 @@ function Header_site() {
           </ul>
         </nav>
         <section className=" md:w-1/4 w-2/4">
-          <span className=" flex md:justify-end justify-center text-sm flex-wrap *:w-full">
-            <span>
+          <div className=" flex md:justify-end justify-center text-sm flex-wrap *:w-full " data-aos="fade-right"  data-aos-duration="2000">
+            <span >
               PIDE PRESUPUESTO SIN COMPROMISO</span>
             <div className=" flex  items-center ">
               <FaArrowRight className=" text-2xl"></FaArrowRight>
               <Link href={'tel:+34615951025'}>Telf:+34 615951025</Link>
             </div>
 
-          </span>
+          </div>
         </section>
         <span className=" w-1/4 flex justify-end md:hidden text-2xl">
           <span onClick={openMenu}>
