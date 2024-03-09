@@ -1,7 +1,7 @@
 
 import Firstrow from "./firstRow/firstrow";
 import Secendrow from "./secendrow/Secendrow";
-import Thirdrow from "./Thirdrow/Thirdrow";
+import Thirdrow from "./thirdrow/Thirdrow";
 import Fourthrow from "./fouthrow/Fourthrow";
 import Fiverow from "./fiverow/Fiverow";
 import Sixrow from "./sixrow/Sixrow";
