@@ -27,7 +27,7 @@ export default function page() {
                 <p>
                 </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

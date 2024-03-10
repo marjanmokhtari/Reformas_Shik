@@ -21,7 +21,7 @@ export default function page() {
                 En el panorama empresarial actual, el trabajo desde casa se ha convertido en una norma. Para aquellos que buscan un entorno de trabajo productivo y cómodo, una reforma de oficina en el hogar es esencial. Como empresa de reformas líder, te ofrecemos soluciones personalizadas para transformar tu espacio en un santuario de productividad.
                 </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

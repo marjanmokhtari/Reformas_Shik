@@ -61,13 +61,13 @@ function Header_site() {
 
   return (
     <header className=" w-full flex justify-center items-center">
-      <section className=" w-full flex items-center justify-between 2xl:container  px-4 py-2 relative ">
+      <section className=" w-full flex items-center justify-between  py-2 2xl:container  px-4 relative ">
         <section className=" w-1/4">
           <section>
-            <Image className=" md:w-[80px] w-[50px] rounded-full " src={LogoSite} width={1000} height={100}></Image>
+            <Image className=" md:w-[120px] w-[50px] rounded-full  " src={LogoSite} width={1000} height={100}></Image>
           </section>
         </section>
-        <nav className=" w-2/4  items-center hidden md:flex">
+        <nav className=" w-1/4  items-center hidden md:flex ">
           <ul className=" flex justify-center items-center *:mx-2 capitalize cursor-pointer  w-full">
             <li><Link className="myhove relative" href={'/'}>inicio</Link></li>
             <li className="group myhove relative">Páginas
@@ -81,16 +81,15 @@ function Header_site() {
                 <li><Link className=" relative myhove" href={'/Comedor'}>Comedor</Link></li>
               </ul>
             </li>
-            <li><Link className="myhove relative" href={'/'}>contacto</Link></li>
+            <li><Link className="myhove relative" href={'/contact'}>contacto</Link></li>
 
           </ul>
         </nav>
-        <section className=" md:w-1/4 w-2/4">
+        <section className=" md:w-1/4 w-2/4 ">
           <div className=" flex md:justify-end justify-center text-sm flex-wrap *:w-full " data-aos="fade-right" data-aos-duration="2000">
-            <span >
+            <span className=" font-bold text-lg">
               PIDE PRESUPUESTO SIN COMPROMISO</span>
-            <div className=" flex  items-center ">
-              <FaArrowRight className=" text-2xl"></FaArrowRight>
+            <div className=" flex  items-center font-bold text-lg ">
               <Link href={'tel:+34615951025'}>Telf:+34 615951025</Link>
             </div>
 
@@ -111,7 +110,7 @@ function Header_site() {
                 <ul className=" capitalize w-full flex *:w-full flex-wrap  *:flex *:justify-center *:my-4 items-center">
                   <li><Link href={'/'}>inicio </Link></li>
                   <li><Link href={'/'}>Páginas</Link></li>
-                  <li><Link href={'/'}>contacto</Link></li>
+                  <li><Link href={'/contact'}>Contacto</Link></li>
                 </ul>
               </nav>
             </section>
@@ -130,52 +129,57 @@ function Myfooter() {
         <section className=" w-full flex flex-wrap md:px-28 px-12 py-20">
           <section className=" w-full lg:w-1/3 ">
             <section className=" flex ">
-              <figure className=" w-[120px]">
+              <figure className=" w-[180px]">
                 <Image className=" w-full h-full object-cover rounded-full " src={LogoSite}></Image>
               </figure>
             </section>
-            <section className=" border ">
-              <section className=" flex text-3xl  *:me-5 *:*:w-[30px] my-3">
-                <Link href={'mailto:reformasshik@gmail.com'}>
-                  <Image src={Logemail}></Image>
-                </Link>
-                <Link href={'https://www.instagram.com/reformasshik'}>
-                  <Image src={Logins}></Image>
-                </Link>
-                <Link href={'tel:+34615951025'}>
-                  <Image src={Logtel}></Image>
-                </Link>
-                <Link href={'https://wa.me/34615951025'}>
-                  <Image src={LogWhats}></Image>
-                </Link>
-              </section>
+            <section className=" bg-emerald-500 ">
+
             </section>
           </section>
           <section className=" w-full lg:w-2/3 ">
             <section className=" flex  *:md:w-1/3 *:w-full flex-wrap *:my-3 *:md:my-0  ">
               <nav>
                 <ul className=" *:my-2">
-                  <li className=" font-semibold text-xl">Páginas</li>
                   <li><Link href={'/'}>Inicio</Link></li>
-                  <li>Contacto</li>
+                  <li><Link href={'/contact'}>Contacto</Link></li>
+                  <section className=" flex flex-wrap text-3xl *:w-full  *:my-1 my-3">
+                    <Link href={'mailto:reformasshik@gmail.com'}>
+                      <Image className="w-[30px]" src={Logemail}></Image>
+                    </Link>
+                    <Link href={'https://www.instagram.com/reformasshik'}>
+                      <Image className="w-[30px]" src={Logins}></Image>
+                    </Link>
+                    <Link href={'tel:+34615951025'}>
+                      <Image className="w-[30px]" src={Logtel}></Image>
+                    </Link>
+                    <Link href={'https://wa.me/34615951025'}>
+                      <Image className="w-[30px]" src={LogWhats}></Image>
+                    </Link>
+                  </section>
                 </ul>
               </nav>
               <nav>
                 <ul className=" *:my-2 cursor-pointer">
-                  <li className=" font-semibold text-xl ">Páginas</li>
+
                   <li><Link href={'/Cocina'}>Cocina</Link></li>
                   <li><Link href={'/Dormitorio'}>Dormitorio</Link></li>
                   <li><Link href={'/Salon'}>Salón</Link></li>
                   <li><Link href={'/bathroom'}>Baño</Link></li>
+                  <li><Link href={'/woodwall'}>Palillería</Link></li>
+
 
                 </ul>
               </nav>
               <nav>
                 <ul className=" *:my-2">
-                  <li className=" font-semibold text-xl ">Páginas</li>
+
                   <li><Link href={'/Entrada'}>Entrada</Link></li>
                   <li><Link href={'/Oficina'}>Oficina</Link></li>
                   <li><Link href={'/Comedor'}>Comedor</Link></li>
+                  <li><Link href={'/bar'}>Bar</Link></li>
+                  <li><Link href={'/Pizzeria'}>Pizzeria</Link></li>
+                  <li><Link href={'/reforma'}>Reforma Integral De Una Casa</Link></li>
 
                 </ul>
               </nav>

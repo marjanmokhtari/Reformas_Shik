@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 
 import Dorm1 from '../img/Dormitorio/dorm1.webp'
-import Dorm2 from '../img/Dormitorio/dorm2.webp'
+import Dorm2 from '../img/Dormitorio/dorm2.jpg'
 import Dorm3 from '../img/Dormitorio/dorm3.webp'
 import Dorm4 from '../img/Dormitorio/dorm4.webp'
 import Dorm5 from '../img/Dormitorio/dorm5.webp'
@@ -30,7 +30,7 @@ export default function page() {
             <div className=' *:lg:w-1/2 *:w-[90%] py-4 flex justify-center'>
                 <p>El dormitorio, el ambiente más relajante para tener un sueño reparador y quitar el cansancio del cuerpo y del alma.</p>
             </div>
-            <section>
+            <section className=' px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 
@@ -38,7 +38,7 @@ export default function page() {
                     </figure>
                     <figure className=' w-[420px]'>
 
-                        <Image className=' w-full h-full object-cover' src={Dorm2}></Image>
+                        <Image className=' w-full h-full object-cover ' src={Dorm2}></Image>
                     </figure>
                     <figure className=' w-[420px]'>
 

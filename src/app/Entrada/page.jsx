@@ -15,7 +15,7 @@ export default function page() {
                 La entrada de tu hogar que sea grande o pequeña, creamos una zona agradable y funcional con la sensación de ser bienvenido a quien entre en tu casa.
                 </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

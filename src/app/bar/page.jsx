@@ -12,10 +12,9 @@ export default function pagr() {
         <section className=' w-full flex flex-wrap *:w-full justify-center *:text-center   capitalize my-10  '>
             <h6 className=' md:text-4xl text-2xl flex justify-center '>Bar:</h6>
             <div className=' *:lg:w-1/2 *:w-[90%] py-4 flex justify-center'>
-                <p>
-                </p>
+            <p> Reforma integral de un Bar- Restaurante </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

@@ -36,7 +36,7 @@ export default function page() {
             <div className=' *:lg:w-1/2 *:w-[90%] py-4 flex justify-center'>
                 <p>El Baño, donde la funcionalidad importa más todavía, debido a que normalmente es el espacio más pequeño de tu casa; así que tratamos de convertirlo a un espacio funcional y fácil de limpiar.</p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

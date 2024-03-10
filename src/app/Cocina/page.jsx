@@ -28,7 +28,7 @@ export default function page() {
                     <div className=' *:lg:w-1/2 *:w-[90%] py-4 flex justify-center'>
                         <p>La Cocina, el corazón de tu hogar, tratamos de conectar este espacio al resto de tu casa, reflejando tu estilo individual, Con más luz natural y más sitio de almacenaje posible.</p>
                     </div>
-                    <section>
+                    <section className='px-10 md:px-0'>
                         <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                             <figure className=' w-[420px] flex'>
 

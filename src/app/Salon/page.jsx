@@ -27,7 +27,7 @@ export default function page() {
                 El Salón, donde se junta toda la familia a pasar un rato agradable descansando de un día largo de trabajo, intentamos crear un ambiente acogedor y relajante para que disfrutes al lado de tus seres queridos.
                 </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

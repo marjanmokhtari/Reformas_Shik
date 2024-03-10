@@ -2,7 +2,6 @@
 import Firstrow from "./firstRow/firstrow";
 import Secendrow from "./secendrow/Secendrow";
 import Thirdrow from "./thirdrow/Thirdrow";
-import Fourthrow from "./fouthrow/Fourthrow";
 import Fiverow from "./fiverow/Fiverow";
 import Sixrow from "./sixrow/Sixrow";
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
         <Firstrow></Firstrow>
         <Secendrow></Secendrow>
         <Thirdrow></Thirdrow>
-        <Fourthrow></Fourthrow>
         <Fiverow></Fiverow>
         <Sixrow></Sixrow>
       </section>

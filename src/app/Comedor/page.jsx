@@ -18,7 +18,7 @@ export default function page() {
                 <p>
                 El comedor es más que un simple sitio para comer; es un punto de encuentro donde las familias se reúnen, comparten y crean recuerdos. Por eso, entendemos la importancia de una reforma que no solo renueve su estética, sino que también mejore su funcionalidad y armonía.                </p>
             </div>
-            <section>
+            <section className='px-10 md:px-0'>
                 <section className=' w-full flex flex-wrap  *:my-5 justify-center md:justify-evenly '>
                     <figure className=' w-[420px] flex'>
 

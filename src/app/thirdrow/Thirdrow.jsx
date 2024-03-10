@@ -19,7 +19,7 @@ export default function Thirdrow() {
                 <section className='w-full 2xl:container xl:px-28 px-5 z-20'>
                     <section className='pt-20 text-white px-4'>
                        
-                        <h6 className='text-3xl font-semibold py-2 capitalize'>colecciones profesionales</h6>
+                        <h6 className='text-3xl font-semibold py-2 capitalize'>nuestros trabajos</h6>
                     </section>
 
                   <section className=' pt-10 pb-20'>
