@@ -2,9 +2,9 @@
 import React from 'react'
 import '../globals.css'
 
-
-
 export default function firstrow() {
+ 
+    
     return (
         <section className=' w-full'>
             <section className=' w-full mybg flex justify-center min-h-[90vh]  relative'>

@@ -32,17 +32,17 @@ export default function Fiverow() {
                                 <Image className=' w-full h-full object-cover' src={Comedor}></Image>
                             </figure>
                         </Link>
-                        <Link href={'/Comedor'}>
+                        <Link href={'/bar'}>
                             <figure className='w-[400px] h-[400px]'>
                                 <Image className=' w-full h-full object-cover' src={Bar}></Image>
                             </figure>
                         </Link>
-                        <Link href={'/Comedor'}>
+                        <section >
                             <figure className=' w-[400px] h-[400px]'>
                                 <Image className=' w-full h-full object-cover' src={pizzeria}></Image>
                             </figure>
-                        </Link>
-                        <Link href={'/Comedor'}>
+                        </section>
+                        <Link href={'/reforma'}>
                             <figure className='w-[400px] h-[400px]'>
                                 <Image className=' w-full h-full object-cover' src={endpic}></Image>
                             </figure>
