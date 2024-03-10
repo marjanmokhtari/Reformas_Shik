@@ -54,10 +54,10 @@ function Header_site() {
 
   useEffect(() => {
     AOS.init({
-         duration: 800,
-         once: false,
-       })
- }, [])
+      duration: 800,
+      once: false,
+    })
+  }, [])
 
   return (
     <header className=" w-full flex justify-center items-center">
@@ -68,15 +68,25 @@ function Header_site() {
           </section>
         </section>
         <nav className=" w-2/4  items-center hidden md:flex">
-          <ul className=" flex justify-center items-center *:mx-2 capitalize  w-full">
-            <li><Link href={'/'}>inicio</Link></li>
-            <li><Link href={'/'}>Páginas</Link></li>
-            <li><Link href={'/'}>contacto</Link></li>
+          <ul className=" flex justify-center items-center *:mx-2 capitalize cursor-pointer  w-full">
+            <li><Link className="myhove relative" href={'/'}>inicio</Link></li>
+            <li className="group myhove relative">Páginas
+              <ul className=" w-[150px] group-hover:opacity-100 group-hover:flex flex-wrap *:w-full opacity-0 hidden absolute top-8 bg-white rounded-md shadow-lg shadow-black   *:my-2  *:px-4 z-50">
+                <li><Link className=" relative myhove" href={'/Cocina'}>Cocina</Link></li>
+                <li><Link className=" relative myhove" href={'/Dormitorio'}>Dormitorio</Link></li>
+                <li><Link className=" relative myhove" href={'/Salon'}>Salón</Link></li>
+                <li><Link className=" relative myhove" href={'/bathroom'}>Baño</Link></li>
+                <li><Link className=" relative myhove" href={'/Entrada'}>Entrada</Link></li>
+                <li><Link className=" relative myhove" href={'/Oficina'}>Oficina</Link></li>
+                <li><Link className=" relative myhove" href={'/Comedor'}>Comedor</Link></li>
+              </ul>
+            </li>
+            <li><Link className="myhove relative" href={'/'}>contacto</Link></li>
 
           </ul>
         </nav>
         <section className=" md:w-1/4 w-2/4">
-          <div className=" flex md:justify-end justify-center text-sm flex-wrap *:w-full " data-aos="fade-right"  data-aos-duration="2000">
+          <div className=" flex md:justify-end justify-center text-sm flex-wrap *:w-full " data-aos="fade-right" data-aos-duration="2000">
             <span >
               PIDE PRESUPUESTO SIN COMPROMISO</span>
             <div className=" flex  items-center ">
@@ -117,14 +127,14 @@ function Myfooter() {
   return (
     <section className=" w-full py-2  bg-[#f4e2c7] flex justify-center">
       <section className=" w-full flex flex-wrap 2xl:container ">
-        <section className=" w-full flex flex-wrap px-28 py-20">
+        <section className=" w-full flex flex-wrap md:px-28 px-12 py-20">
           <section className=" w-full lg:w-1/3 ">
             <section className=" flex ">
               <figure className=" w-[120px]">
-                <Image className=" w-full h-full object-cover " src={LogoSite}></Image>
+                <Image className=" w-full h-full object-cover rounded-full " src={LogoSite}></Image>
               </figure>
             </section>
-            <section>
+            <section className=" border ">
               <section className=" flex text-3xl  *:me-5 *:*:w-[30px] my-3">
                 <Link href={'mailto:reformasshik@gmail.com'}>
                   <Image src={Logemail}></Image>
@@ -142,33 +152,33 @@ function Myfooter() {
             </section>
           </section>
           <section className=" w-full lg:w-2/3 ">
-            <section className=" flex *:mx-8 ">
-             <nav>
-              <ul className=" *:my-2">
-                <li className=" font-semibold text-xl">Páginas</li>
-                <li><Link href={'/'}>Inicio</Link></li>
-                <li>Contacto</li>
-              </ul>
-             </nav>
-             <nav>
+            <section className=" flex  *:md:w-1/3 *:w-full flex-wrap *:my-3 *:md:my-0  ">
+              <nav>
+                <ul className=" *:my-2">
+                  <li className=" font-semibold text-xl">Páginas</li>
+                  <li><Link href={'/'}>Inicio</Link></li>
+                  <li>Contacto</li>
+                </ul>
+              </nav>
+              <nav>
                 <ul className=" *:my-2 cursor-pointer">
                   <li className=" font-semibold text-xl ">Páginas</li>
                   <li><Link href={'/Cocina'}>Cocina</Link></li>
                   <li><Link href={'/Dormitorio'}>Dormitorio</Link></li>
                   <li><Link href={'/Salon'}>Salón</Link></li>
                   <li><Link href={'/bathroom'}>Baño</Link></li>
-                  
+
                 </ul>
-             </nav>
-             <nav>
+              </nav>
+              <nav>
                 <ul className=" *:my-2">
                   <li className=" font-semibold text-xl ">Páginas</li>
                   <li><Link href={'/Entrada'}>Entrada</Link></li>
                   <li><Link href={'/Oficina'}>Oficina</Link></li>
                   <li><Link href={'/Comedor'}>Comedor</Link></li>
-                           
+
                 </ul>
-             </nav>
+              </nav>
             </section>
           </section>
         </section>

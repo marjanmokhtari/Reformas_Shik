@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic1 from '../img/pic1 (1).webp'
+import Pic2 from '../img/img1.webp'
 import Image from 'next/image'
 import Link from 'next/link';
 import Ins from '../img/Instagram_icon.png.webp'
@@ -44,7 +44,7 @@ export default function Secendrow() {
 
                 <section>
                     <figure>
-                        <Image src={Pic1}></Image>
+                        <Image src={Pic2}></Image>
                     </figure>
                 </section>
             </section>

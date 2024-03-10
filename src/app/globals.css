@@ -40,3 +40,19 @@ body {
   object-fit: cover;
   background-position: center;
 }
+
+.myhove::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  left: 0;
+  bottom: -20%;
+  transition: .4s;
+ 
+}
+
+.myhove:hover::after{
+  width: 100%;
+}
