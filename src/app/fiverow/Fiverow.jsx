@@ -12,9 +12,7 @@ export default function Fiverow() {
     return (
         <section className='  w-full flex justify-center my-20'>
             <section className=' w-full 2xl:container flex justify-center flex-wrap *:w-full'>
-                <section className=' flex justify-center capitalize'>
-                    <h6 className=' font-bold text-xl lg:text-3xl capitalize'>nuestros trabajos</h6>
-                </section>
+               
                 <section>
                     <section className=' w-full  flex flex-wrap *:my-5 justify-evenly pt-10 px-12 lg:px-0 '>
                         <Link href={'/Entrada'}>

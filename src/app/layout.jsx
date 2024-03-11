@@ -1,5 +1,4 @@
 "use client"
-import { Inter } from "next/font/google";
 import "./globals.css";
 import LogoSite from './img/logo.png'
 import Image from "next/image";
@@ -15,9 +14,14 @@ import Logins from './img/Instagram_icon.png.webp'
 import Logemail from './img/Gmail_icon_(2020).svg.png'
 import Logtel from './img/tel.png'
 import LogWhats from './img/wtsap.png'
+import localFont from 'next/font/local'
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+const myFont = localFont({
+  src: "./font/Roboto-Regular.ttf",
+  display: "swap",
+});
 
 
 
@@ -28,7 +32,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Reformas Shik</title>
       </head>
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <main>
           <Header_site></Header_site>
           {children}
@@ -67,7 +71,7 @@ function Header_site() {
             <Image className=" md:w-[120px] w-[50px] rounded-full  " src={LogoSite} width={1000} height={100}></Image>
           </section>
         </section>
-        <nav className=" w-1/4  items-center hidden md:flex ">
+        <nav className=" w-1/4  items-center flex-wrap *:w-full hidden md:flex  ">
           <ul className=" flex justify-center items-center *:mx-2 capitalize cursor-pointer  w-full">
             <li><Link className="myhove relative" href={'/'}>inicio</Link></li>
             <li className="group myhove relative">Páginas
@@ -83,6 +87,20 @@ function Header_site() {
             </li>
             <li><Link className="myhove relative" href={'/contact'}>contacto</Link></li>
 
+          </ul>
+          <ul className=" flex justify-evenly pt-5">
+            <li><Link href={'mailto:reformasshik@gmail.com'}>
+              <Image className="w-[30px]" src={Logemail}></Image>
+            </Link></li>
+            <li>   <Link href={'https://www.instagram.com/reformasshik'}>
+              <Image className="w-[30px]" src={Logins}></Image>
+            </Link></li>
+            <li>  <Link href={'tel:+34615951025'}>
+              <Image className="w-[30px]" src={Logtel}></Image>
+            </Link></li>
+            <li>   <Link href={'https://wa.me/34615951025'}>
+              <Image className="w-[30px]" src={LogWhats}></Image>
+            </Link></li>
           </ul>
         </nav>
         <section className=" md:w-1/4 w-2/4 ">
@@ -100,7 +118,7 @@ function Header_site() {
             <TbMenu></TbMenu>
           </span>
         </span>
-        <section ref={menu_mobile} className={` absolute w-full min-h-[100vh]  z-50 left-0 top-0 bg-white md:hidden ${isMenuopen ? 'flex' : 'hidden'}`}>
+        <section ref={menu_mobile} className={` fixed w-full min-h-[100vh]  z-50 left-0 top-0 bg-white md:hidden ${isMenuopen ? 'flex' : 'hidden'}`}>
           <section className=" w-full   p-5">
             <section className=" w-full flex justify-end">
               <IoCloseSharp onClick={closeMenu} className=" flex justify-end text-4xl "></IoCloseSharp>
@@ -111,6 +129,22 @@ function Header_site() {
                   <li><Link href={'/'}>inicio </Link></li>
                   <li><Link href={'/'}>Páginas</Link></li>
                   <li><Link href={'/contact'}>Contacto</Link></li>
+                </ul>
+              </nav>
+              <nav className=" w-full ">
+                <ul className=" flex justify-center *:mx-2 pt-5">
+                  <li><Link href={'mailto:reformasshik@gmail.com'}>
+                    <Image className="w-[30px]" src={Logemail}></Image>
+                  </Link></li>
+                  <li>   <Link href={'https://www.instagram.com/reformasshik'}>
+                    <Image className="w-[30px]" src={Logins}></Image>
+                  </Link></li>
+                  <li>  <Link href={'tel:+34615951025'}>
+                    <Image className="w-[30px]" src={Logtel}></Image>
+                  </Link></li>
+                  <li>   <Link href={'https://wa.me/34615951025'}>
+                    <Image className="w-[30px]" src={LogWhats}></Image>
+                  </Link></li>
                 </ul>
               </nav>
             </section>
@@ -124,7 +158,7 @@ function Header_site() {
 
 function Myfooter() {
   return (
-    <section className=" w-full py-2  bg-[#f4e2c7] flex justify-center">
+    <section className=" w-full py-2  bg-[#f4e2c7] flex flex-wrap justify-center">
       <section className=" w-full flex flex-wrap 2xl:container ">
         <section className=" w-full flex flex-wrap md:px-28 px-12 py-20">
           <section className=" w-full lg:w-1/3 ">
@@ -133,13 +167,10 @@ function Myfooter() {
                 <Image className=" w-full h-full object-cover rounded-full " src={LogoSite}></Image>
               </figure>
             </section>
-            <section className=" bg-emerald-500 ">
-
-            </section>
           </section>
           <section className=" w-full lg:w-2/3 ">
             <section className=" flex  *:md:w-1/3 *:w-full flex-wrap *:my-3 *:md:my-0  ">
-              <nav>
+              <nav className="">
                 <ul className=" *:my-2">
                   <li><Link href={'/'}>Inicio</Link></li>
                   <li><Link href={'/contact'}>Contacto</Link></li>
@@ -189,6 +220,11 @@ function Myfooter() {
 
 
         <section></section>
+      </section>
+      <section className=" w-full border-t  border-t-black py-2">
+        <h6 className=" capitalize  flex justify-center ">
+          <Link href={'https://www.linkedin.com/in/marjanmokhtari/'}>developer by <span className=" font-semibold">marjan mokhtari</span></Link>
+        </h6>
       </section>
     </section>
   )
