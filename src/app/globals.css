@@ -56,3 +56,9 @@ body {
 .myhove:hover::after{
   width: 100%;
 }
+.gallery{
+  overflow: hidden;
+}
+.gallery:hover .childgallery{
+  height: 110%;
+}

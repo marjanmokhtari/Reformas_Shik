@@ -16,46 +16,46 @@ export default function Fiverow() {
                 <section>
                     <section className=' w-full  flex flex-wrap *:my-5 justify-evenly pt-10 px-12 lg:px-0 '>
                         <Link href={'/Entrada'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={Entrada}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>Entrada</span>
+                            <figure className='w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={Entrada}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>Entrada</span>
                         </Link>
                         <Link href={'/Oficina'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={Ofcin}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>oficina</span>
+                            <figure className='w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={Ofcin}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>oficina</span>
                         </Link>
                         <Link href={'/Comedor'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={Comedor}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>Comedor</span>
+                            <figure className='w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={Comedor}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>Comedor</span>
                         </Link>
                         <Link href={'/bar'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={Bar}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>Bar</span>
+                            <figure className='w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={Bar}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>Bar</span>
                         </Link>
                         <Link href={'/Pizzeria'} >
-                            <figure className=' w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={pizzeria}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>pizzeria</span>
+                            <figure className=' w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={pizzeria}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>pizzeria</span>
                         </Link>
                         <Link href={'/woodwall'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={Woodwall}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>palillería</span>
+                            <figure className='w-[400px] h-[400px] gallery'>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={Woodwall}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>palillería</span>
                         </Link>
                         <Link href={'/reforma'}>
-                            <figure className='w-[400px] h-[400px]'>
-                                <Image className=' w-full h-full object-cover' src={endpic}></Image>
-                                <span className=' text-lg py-2 capitalize flex font-semibold'>Reforma Integral De Una Casa</span>
+                            <figure className='w-[400px] h-[400px] gallery '>
+                                <Image className=' w-full h-full object-cover childgallery duration-500' src={endpic}></Image>
                             </figure>
+                                <span className=' text-lg py-2 capitalize flex font-semibold'>Reforma Integral De Una Casa</span>
                         </Link>
                     </section>
                 </section>
